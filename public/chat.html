@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Chat Around</title>
+  </head>
+
+<body class="d-flex flex-column">
+		<nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+			<div class="container-fluid">
+				<a href="https://seniorcounsel.onrender.com/fields" class="navbar-brand" href="#" style="margin-left: 3%">Fields</a>
+			</div>
+		</nav>
+    <div class="chat-container">
+      <header class="chat-header">
+        <h1><i class="fas fa-smile"></i> Chat Around</h1>
+        <a id="leave-btn" class="btn" href="https://seniorcounsel.onrender.com/fields">Leave Room</a>
+      </header>
+      <main class="chat-main container">
+        <div class="chat-sidebar">
+          <h3><i class="fas fa-comments"></i> Room Name:</h3>
+          <h2 id="room-name"></h2>
+          <h3><i class="fas fa-users"></i> Users</h3>
+          <ul id="users"></ul>
+        </div>
+        <div class="chat-messages"></div>
+      </main>
+      <div class="chat-form-container">
+        <form id="chat-form">
+          <input
+            id="msg"
+            type="text"
+            placeholder="Enter Message"
+            required
+            autocomplete="off"
+          />
+          <button class="btn"><i class="fas fa-paper-plane"></i> Send</button>
+        </form>
+      </div>
+      </div>
+      <iframe
+      src="https://www.chatbase.co/chatbot-iframe/i0RdDrrMspd6ULfkXGZGe"
+      width="100%"
+      style="height: 100%; min-height: 700px"
+      frameborder="0"
+      ></iframe>
+      
+
+      
+
+    </body>
+
+    <footer class="footer bg-dark py-3 mt-auto">
+      <div class="container">
+          <span class="text-muted">&copy; Chat Around 2023</span>
+      </div>
+  </footer>
+  <script>
+    window.embeddedChatbotConfig = {
+    chatbotId: "i0RdDrrMspd6ULfkXGZGe",
+    domain: "www.chatbase.co"
+    }
+    </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+  integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+  crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+  integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+  crossorigin="anonymous"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.9.2/qs.min.js"
+      integrity="sha256-TDxXjkAUay70ae/QJBEpGKkpVslXaHHayklIVglFRT4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="js/main.js"></script>
+</html>
